@@ -1,0 +1,8 @@
+spring:
+  dubbo:
+    registry:
+      address: zookeeper://47.104.255.72:2181
+    consumer:
+      timeout: 12000
+    provider:
+      timeout: 12000

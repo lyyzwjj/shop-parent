@@ -1,0 +1,89 @@
+2018-08-26 11:20:42,250 INFO (StartupInfoLogger.java:48)- Starting GoodsServerApplication on DESKTOP-5ARIRLN with PID 15200 (D:\data\src\shop-parent\shop-goods-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 11:20:42,263 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 11:20:42,264 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 11:20:49,222 INFO (StartupInfoLogger.java:48)- Starting MemberServerApplication on DESKTOP-5ARIRLN with PID 9100 (D:\data\src\shop-parent\shop-member-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 11:20:49,228 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 11:20:49,229 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 11:21:00,096 INFO (StartupInfoLogger.java:57)- Started MemberServerApplication in 11.791 seconds (JVM running for 12.98)
+2018-08-26 11:21:00,591 INFO (StartupInfoLogger.java:57)- Started GoodsServerApplication in 20.001 seconds (JVM running for 21.728)
+2018-08-26 11:21:10,259 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 15640 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 11:21:10,269 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 11:21:10,270 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 11:21:24,500 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 14.861 seconds (JVM running for 15.861)
+2018-08-26 11:26:44,690 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 16584 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 11:26:44,694 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 11:26:44,695 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 11:26:55,124 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 11.073 seconds (JVM running for 11.863)
+2018-08-26 11:28:27,925 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, username, password, state from user_login where username = ? and password = ? 
+2018-08-26 11:28:27,957 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: wjj(String), C4CA4238A0B923820DCC509A6F75849B(String)
+2018-08-26 11:28:27,990 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-26 11:35:06,791 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 11816 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 11:35:06,797 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 11:35:06,797 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 11:35:15,519 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 9.303 seconds (JVM running for 9.878)
+2018-08-26 12:09:03,141 INFO (StartupInfoLogger.java:48)- Starting MemberServerApplication on DESKTOP-5ARIRLN with PID 21372 (D:\data\src\shop-parent\shop-member-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 12:09:03,145 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 12:09:03,146 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 12:09:11,953 INFO (StartupInfoLogger.java:57)- Started MemberServerApplication in 9.406 seconds (JVM running for 10.017)
+2018-08-26 12:15:27,138 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 1904 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 12:15:27,144 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 12:15:27,144 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 12:15:36,233 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 9.738 seconds (JVM running for 10.569)
+2018-08-26 12:17:02,028 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, user_id, consignee, phone, country, province, city, district, address, zipcode, status from user_address where id = ? 
+2018-08-26 12:17:02,028 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, user_id, consignee, phone, country, province, city, district, address, zipcode, status from user_address where id = ? 
+2018-08-26 12:17:02,030 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, user_id, consignee, phone, country, province, city, district, address, zipcode, status from user_address where id = ? 
+2018-08-26 12:17:02,046 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-08-26 12:17:02,046 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-08-26 12:17:02,046 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-08-26 12:17:02,065 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-26 12:17:02,065 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-26 12:17:02,065 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-26 12:17:08,525 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_info (order_sn, user_id, order_amount, pay_type, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:17:08,525 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_info (order_sn, user_id, order_amount, pay_type, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:17:08,525 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_info (order_sn, user_id, order_amount, pay_type, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:17:08,551 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: cn.wolfcode.shop.util.IdGenerateUtil@163fc36e(String), 44(Long), 0(BigDecimal), 2(Integer), 0(Integer), 0(Integer), 0(Integer), 2018-08-26 12:17:08.504(Timestamp), null, 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String)
+2018-08-26 12:17:08,551 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: cn.wolfcode.shop.util.IdGenerateUtil@163fc36e(String), 44(Long), 0(BigDecimal), 2(Integer), 0(Integer), 0(Integer), 0(Integer), 2018-08-26 12:17:02.074(Timestamp), null, 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String)
+2018-08-26 12:17:08,551 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: cn.wolfcode.shop.util.IdGenerateUtil@163fc36e(String), 44(Long), 0(BigDecimal), 2(Integer), 0(Integer), 0(Integer), 0(Integer), 2018-08-26 12:17:02.074(Timestamp), null, 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String)
+2018-08-26 12:22:17,245 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 18224 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 12:22:17,250 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 12:22:17,250 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 12:22:20,565 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 20700 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 12:22:20,570 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 12:22:20,571 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 12:22:29,130 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 9.108 seconds (JVM running for 9.64)
+2018-08-26 12:23:42,242 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, user_id, consignee, phone, country, province, city, district, address, zipcode, status from user_address where id = ? 
+2018-08-26 12:23:42,243 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-08-26 12:23:42,245 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-26 12:23:42,272 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_info (order_sn, user_id, order_amount, pay_type, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:23:42,294 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1033570657541029888(String), 44(Long), 0(BigDecimal), 2(Integer), 0(Integer), 0(Integer), 0(Integer), 2018-08-26 12:23:42.249(Timestamp), null, 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String)
+2018-08-26 12:23:58,753 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 19600 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 12:23:58,758 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 12:23:58,759 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 12:24:07,388 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 9.34 seconds (JVM running for 10.203)
+2018-08-26 12:25:34,197 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, user_id, consignee, phone, country, province, city, district, address, zipcode, status from user_address where id = ? 
+2018-08-26 12:25:34,198 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-08-26 12:25:34,200 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-26 12:25:34,226 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_info (order_sn, user_id, order_amount, pay_type, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:25:34,249 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1033571127131111424(String), 44(Long), 0(BigDecimal), 2(Integer), 0(Integer), 0(Integer), 0(Integer), 2018-08-26 12:25:34.204(Timestamp), null, 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String)
+2018-08-26 12:33:10,523 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 13148 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-26 12:33:10,529 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-26 12:33:10,530 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-26 12:33:27,705 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 18.031 seconds (JVM running for 19.124)
+2018-08-26 12:34:58,512 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, user_id, consignee, phone, country, province, city, district, address, zipcode, status from user_address where id = ? 
+2018-08-26 12:34:58,513 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-08-26 12:34:58,514 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-26 12:34:58,535 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_info (order_sn, user_id, order_amount, pay_type, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:34:58,552 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1033573494039773184(String), 44(Long), 0(BigDecimal), 2(Integer), 0(Integer), 0(Integer), 0(Integer), 2018-08-26 12:34:58.519(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String)
+2018-08-26 12:34:58,558 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-08-26 12:34:58,605 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_product (order_id, sku_id, product_name, product_number, product_price, total_price, product_img, sku_type) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:34:58,606 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long), 170(Long), 小米笔记本(String), 2(BigDecimal), 12000.00(BigDecimal), 24000.00(BigDecimal), null, 颜色:白色 CPU:i7 存储:1T固态 (String)
+2018-08-26 12:34:58,607 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-08-26 12:34:58,645 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into order_product (order_id, sku_id, product_name, product_number, product_price, total_price, product_img, sku_type) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:34:58,646 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long), 216(Long), 小米手机(String), 5(BigDecimal), 1999.00(BigDecimal), 9995.00(BigDecimal), null, 颜色:金色 网络类型:全网通4G 核心数:四核 (String)
+2018-08-26 12:34:58,647 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-08-26 12:34:58,648 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, pay_type = ?, order_status = ?, flow_status = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-08-26 12:34:58,649 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1033573494039773184(String), 44(Long), 0(BigDecimal), 2(Integer), 0(Integer), 0(Integer), 0(Integer), 2018-08-26 12:34:58.519(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 1(Long)
+2018-08-26 12:34:58,653 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-08-26 12:34:58,654 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: insert into invoice (invoice_type, invoice_head, user_id, order_id, invoice_content, invoice_phone, invoice_email) values (?, ?, ?, ?, ?, ?, ?) 
+2018-08-26 12:34:58,654 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 2(Integer), 1(Integer), 44(Long), 1(Long), 1(Integer), 18684954312(String), wzzst310@163.com(String)
+2018-08-26 12:34:58,661 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.CatalogMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.Catalog" >
+    <id column="id" property="id" />
+    <result column="name" property="name" />
+    <result column="code" property="code" />
+    <result column="sort" property="sort" />
+    <result column="p_id" property="pId" />
+    <result column="is_parent" property="isParent" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from catalog
+    where id = #{id}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.shop.domain.Catalog" useGeneratedKeys="true" keyProperty="id" >
+    insert into catalog (name, code, sort, p_id, is_parent)
+    values (#{name}, #{code}, #{sort}, #{pId}, #{isParent})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.Catalog" >
+    update catalog
+    set name = #{name},
+      code = #{code},
+      sort = #{sort},
+      p_id = #{pId},
+      is_parent = #{isParent}
+    where id = #{id}
+  </update>
+  <update id="updateParentStateByChildId">
+    update  catalog set is_parent = false where id = (select p_id from (select p_id from catalog where id = #{childId}) p)
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, name, code, sort, p_id, is_parent
+    from catalog
+    where id = #{id}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, name, code, sort, p_id, is_parent
+    from catalog order by sort
+  </select>
+    <select id="queryChildrenByParentId" resultMap="BaseResultMap">
+    select id, name, code, sort, p_id, is_parent
+    from catalog
+    where p_id = #{catalogId} order by sort
+    </select>
+  <select id="queryParentByParentId" resultMap="BaseResultMap">
+    select id, name, code, sort, p_id, is_parent
+    from catalog
+    where id = #{pId}
+  </select>
+  <select id="queryChildCountByChildId" resultType="java.lang.Integer">
+    select count(id) from catalog where p_id = (select p_id from catalog where id = #{childId} )
+  </select>
+</mapper>

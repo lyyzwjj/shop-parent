@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${file.path}
+  dubbo:
+    application:
+      name: shop-mobile
+    base-package: cn.wolfcode.shop
+file:
+  path: D:/data/src/shop-parent/upload/

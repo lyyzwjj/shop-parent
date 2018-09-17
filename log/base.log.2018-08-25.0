@@ -1,0 +1,105 @@
+2018-08-25 20:59:04,470 INFO (StartupInfoLogger.java:48)- Starting GoodsServerApplication on DESKTOP-5ARIRLN with PID 22408 (D:\data\src\shop-parent\shop-goods-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-25 20:59:04,483 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-25 20:59:04,483 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-25 20:59:20,141 INFO (StartupInfoLogger.java:57)- Started GoodsServerApplication in 16.871 seconds (JVM running for 18.176)
+2018-08-25 20:59:59,233 INFO (StartupInfoLogger.java:48)- Starting OrderServerApplication on DESKTOP-5ARIRLN with PID 19296 (D:\data\src\shop-parent\shop-order-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-25 20:59:59,239 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-25 20:59:59,240 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-25 21:00:10,100 INFO (StartupInfoLogger.java:57)- Started OrderServerApplication in 11.432 seconds (JVM running for 12.005)
+2018-08-25 21:00:11,286 INFO (StartupInfoLogger.java:48)- Starting MemberServerApplication on DESKTOP-5ARIRLN with PID 19284 (D:\data\src\shop-parent\shop-member-server\target\classes started by WangZhe in D:\data\src\shop-parent)
+2018-08-25 21:00:11,290 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE
+2018-08-25 21:00:11,291 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-25 21:00:21,487 INFO (StartupInfoLogger.java:57)- Started MemberServerApplication in 10.761 seconds (JVM running for 11.439)
+2018-08-25 21:01:59,130 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, name, code, sort, p_id, is_parent from catalog order by sort 
+2018-08-25 21:01:59,159 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-08-25 21:01:59,214 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 72
+2018-08-25 21:01:59,249 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, name, created_date, sort, logo, description, url from brand 
+2018-08-25 21:01:59,250 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-08-25 21:01:59,264 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 13
+2018-08-25 21:01:59,942 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-08-25 21:01:59,942 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-08-25 21:01:59,954 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:01:59,956 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-08-25 21:01:59,957 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-08-25 21:01:59,963 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-08-25 21:03:55,074 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, username, password, state from user_login where username = ? and password = ? 
+2018-08-25 21:03:55,121 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: wjj(String), C4CA4238A0B923820DCC509A6F75849B(String)
+2018-08-25 21:03:55,170 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:04:27,135 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, product_id, code, price from product_sku where id = ? 
+2018-08-25 21:04:27,136 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 216(Long)
+2018-08-25 21:04:27,153 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, product_sku_id, sku_property_id, value, image from product_sku_property where product_sku_id = ? 
+2018-08-25 21:04:27,153 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 216(Long)
+2018-08-25 21:04:27,163 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:04:27,164 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 7(Long)
+2018-08-25 21:04:27,172 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:04:27,173 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:04:27,173 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 8(Long)
+2018-08-25 21:04:27,174 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:04:27,175 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:04:27,176 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 13(Long)
+2018-08-25 21:04:27,178 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:04:27,178 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 3
+2018-08-25 21:04:27,179 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:04:27,182 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-08-25 21:04:27,183 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 41(Long)
+2018-08-25 21:04:27,185 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:04:27,187 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, product_sku_id, sku_property_id, value, image from product_sku_property where product_sku_id = ? 
+2018-08-25 21:04:27,188 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 216(Long)
+2018-08-25 21:04:27,189 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:04:27,189 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 7(Long)
+2018-08-25 21:04:27,190 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 1
+2018-08-25 21:04:27,191 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:04:27,192 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 8(Long)
+2018-08-25 21:04:27,193 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 1
+2018-08-25 21:04:27,194 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:04:27,195 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 13(Long)
+2018-08-25 21:04:27,196 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 1
+2018-08-25 21:04:27,197 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-08-25 21:10:32,227 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, product_id, code, price from product_sku where id = ? 
+2018-08-25 21:10:32,228 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 216(Long)
+2018-08-25 21:10:32,230 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, product_sku_id, sku_property_id, value, image from product_sku_property where product_sku_id = ? 
+2018-08-25 21:10:32,232 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 216(Long)
+2018-08-25 21:10:32,235 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:32,236 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 7(Long)
+2018-08-25 21:10:32,238 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:10:32,239 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:32,240 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 8(Long)
+2018-08-25 21:10:32,241 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:10:32,243 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:32,243 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 13(Long)
+2018-08-25 21:10:32,245 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:10:32,245 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 3
+2018-08-25 21:10:32,246 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:10:32,247 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-08-25 21:10:32,248 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 41(Long)
+2018-08-25 21:10:32,250 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:10:57,619 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, product_id, code, price from product_sku where id = ? 
+2018-08-25 21:10:57,621 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 170(Long)
+2018-08-25 21:10:57,626 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, product_sku_id, sku_property_id, value, image from product_sku_property where product_sku_id = ? 
+2018-08-25 21:10:57,627 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 170(Long)
+2018-08-25 21:10:57,632 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:57,634 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 9(Long)
+2018-08-25 21:10:57,638 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:10:57,640 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:57,641 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 10(Long)
+2018-08-25 21:10:57,643 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:10:57,644 DEBUG (BaseJdbcLogger.java:181)- ======>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:57,645 DEBUG (BaseJdbcLogger.java:181)- ======> Parameters: 11(Long)
+2018-08-25 21:10:57,647 DEBUG (BaseJdbcLogger.java:181)- <======      Total: 1
+2018-08-25 21:10:57,648 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 3
+2018-08-25 21:10:57,648 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:10:57,649 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-08-25 21:10:57,650 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 40(Long)
+2018-08-25 21:10:57,652 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-08-25 21:10:57,653 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, product_sku_id, sku_property_id, value, image from product_sku_property where product_sku_id = ? 
+2018-08-25 21:10:57,653 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 170(Long)
+2018-08-25 21:10:57,654 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:57,655 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 9(Long)
+2018-08-25 21:10:57,656 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 1
+2018-08-25 21:10:57,657 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:57,658 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 10(Long)
+2018-08-25 21:10:57,659 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 1
+2018-08-25 21:10:57,659 DEBUG (BaseJdbcLogger.java:181)- ====>  Preparing: select id, catalog_id, name, sort from sku_property where id = ? 
+2018-08-25 21:10:57,660 DEBUG (BaseJdbcLogger.java:181)- ====> Parameters: 11(Long)
+2018-08-25 21:10:57,661 DEBUG (BaseJdbcLogger.java:181)- <====      Total: 1
+2018-08-25 21:10:57,662 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3

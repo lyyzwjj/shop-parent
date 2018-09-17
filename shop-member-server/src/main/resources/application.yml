@@ -1,0 +1,18 @@
+server:
+  port: 9091
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/wolfcode_shop_member
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: admin
+    type: com.alibaba.druid.pool.DruidDataSource
+  dubbo:
+    application:
+      name: shop-member-server
+    base-package: cn.wolfcode.shop
+    protocol:
+      port: 20881
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: cn.wolfcode.shop.domain
